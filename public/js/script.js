@@ -25,3 +25,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+const form = document.querySelector('.contact-form');
+
+if (form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Evita que abra la página de Formspree
+        
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            form.innerHTML = "<h3>¡Gracias! Tu mensaje ha sido enviado con éxito.</h3>";
+            form.style.textAlign = "center";
+            form.style.padding = "2rem";
+        } else {
+            alert("Hubo un error. Por favor, intenta de nuevo.");
+        }
+    });
+}
