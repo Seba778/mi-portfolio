@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Sebas</title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Portfolio de Sebas Schamne, Desarrollador Full Stack. Creando soluciones digitales a medida.">
+    <meta name="keywords" content="Desarrollador, Full Stack, Portfolio, Argentina, Web Design">
+
+    <meta property="og:title" content="Sebas | Full Stack Developer">
+    <meta property="og:description" content="Mira mis proyectos y contactame para trabajar juntos.">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">SEBAS<span>.DEV</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section">
+        <div class="contact-container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="badge">¿HABLAMOS?</div>
+                    <h1>Démosle vida <br> a tu <span class="accent">idea</span></h1>
+                    <p class="contact-description">
+                        ¿Tienes un proyecto en mente o una vacante en tu equipo? Escríbeme y responderé en menos de 24 horas.
+                    </p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span> sebastianschamne1@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span> Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mzdpqjnz" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label>NOMBRE</label>
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>EMAIL</label>
+                        <input type="email" name="email" placeholder="nombre@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>MENSAJE</label>
+                        <textarea name="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Propuesta</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
