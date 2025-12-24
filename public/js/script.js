@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    form.innerHTML = "<h3 style='color: #a855f7; text-align: center; padding: 2rem;'>🚀 ¡Gracias! Tu mensaje ha sido enviado con éxito.</h3>";
+                    form.innerHTML = "<h3 style='color: #a855f7; text-align: center; padding: 2rem;'> ¡Gracias! Tu mensaje ha sido enviado con éxito.</h3>";
                 } else {
                     alert("Hubo un error al enviar. Por favor, intenta de nuevo.");
                 }
